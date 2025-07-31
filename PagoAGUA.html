@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Servicio de Agua Potable</title>
+    <link rel="stylesheet" href="estilos PRUEBA 4 .CSS">
+</head>
+<body>
+    <header>
+        <h1>Pago de Servicio de Agua Potable</h1>
+        <h2>PORTOAGUAS</h2>
+    </header>
+    <main>
+        <section id="payment-form">
+            <h2>Ingrese sus datos de pago</h2>
+            <form>
+                <label for="service">Parroquia:</label>
+                <select id="service" name="service">
+                    <option value="electricidad">SELECCIONE</option>
+                    <option value="electricidad">12 de marzo</option>
+                    <option value="electricidad">18 de octubre</option>
+                    <option value="electricidad">Andrés de Vera</option>
+                    <option value="electricidad">Colón</option>
+                    <option value="electricidad">Francisco Pacheco</option>
+                    <option value="electricidad">San Pablo Vera Montesdeoca</option>
+                    <option value="electricidad">Simón Bolívar</option>
+                    <option value="electricidad">Picoazá</option>
+                    <option value="electricidad">Portoviejo</option>
+                    <option value="electricidad">Abdón Calderón</option>
+                    <option value="electricidad">Alhajuela</option>
+                    <option value="electricidad">Chirijos</option>
+                    <option value="electricidad">Crucita</option>
+                    <option value="electricidad">Pueblo Nuevo</option>
+                    <option value="electricidad">San Plácido</option>
+                    <option value="electricidad">Riochico</option>
+                </select>
+                <label for="amount">Numero de Contrato:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="amount">Monto:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="payment-method">Método de pago:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="tarjeta-credito">Tarjeta de crédito</option>
+                    <option value="tarjeta-debito">Tarjeta de débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="transferencia-bancaria">Transferencia bancaria</option>
+                </select>
+                <div id="payment-details">
+                    <!-- Detalles de pago según el método seleccionado -->
+                </div>
+                <button id="pay-btn">Pagar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos con PayPal</title>
+    <link rel="stylesheet" href="estilos PRUEBA 4 .CSS">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="PRUEBA 4.html">Inicio</a></li>
+                <li><a href="PRUEBA 4.html">Servicios</a></li>
+                <li><a href="PRUEBA 4.html">Contacto</a></li>
+            </ul>
+            <button id="login-btn">Iniciar sesión</button>
+            <button id="logout-btn" style="display: none;">Cerrar sesión</button>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Servicios disponibles</h2>
+            <ul id="service-list">
+                <!-- Lista de servicios dinámicos -->
+            </ul>
+        </section>
+        <section id="payment">
+            <h2>Realizar pago</h2>
+            <form id="payment-form">
+                <label for="service">Servicio:</label>
+                <select id="service" name="service">
+                    <!-- Opciones dinámicas -->
+                </select>
+                <label for="amount">Monto:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button id="pay-btn">Pagar con PayPal</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=TU_CLIENT_ID_DE_PAYPAL"></script>
+</body>
+</html>

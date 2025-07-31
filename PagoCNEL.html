@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Servicio de Energía Eléctrica</title>
+    <link rel="stylesheet" href="estilos PRUEBA 4 .CSS">
+</head>
+<body>
+    <header>
+        <h1>Pago de Servicio de Energía Eléctrica</h1>
+        <h2>CNEL EP</h2>
+    </header>
+    <main>
+        <section id="payment-form">
+            <h2>Ingrese sus datos de pago</h2>
+            <form>
+                <label for="service">Servicio:</label>
+                <select id="service" name="service">
+                <option value="electricidad">SELECCIONE</option>
+                <option value="electricidad">Planilla</option>
+                <option value="electricidad">Reconeccion</option>
+                <option value="electricidad">Instalacion</option>
+                </select>
+                <label for="service">Numero de Orden:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="amount">Monto:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="payment-method">Método de pago:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="tarjeta-credito">Tarjeta de crédito</option>
+                    <option value="tarjeta-debito">Tarjeta de débito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="transferencia-bancaria">Transferencia bancaria</option>
+                </select>
+                <div id="payment-details">
+                    <!-- Detalles de pago según el método seleccionado -->
+                </div>
+                <button id="pay-btn">Pagar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script3.js"></script>
+</body>
+</html>
